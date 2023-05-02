@@ -1,9 +1,26 @@
-body {
+body, html {
     /* overflow: hidden; */
+    height: 100%
 }
+
+.bg {
+    /* The image used */
+    background-image: url("../assets/ch1.png");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  
 .ch1 {
     background-color: #408d75;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .ch2 {
@@ -27,10 +44,29 @@ body {
 }
 
 .start-btn {
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
     position: absolute;
     right: 830px;
     bottom: 320px;
-    opacity: 0%;
+    opacity: 100%;
     width: 170px;
     height: 60px;
 }
@@ -110,6 +146,19 @@ input::-webkit-inner-spin-button {
   transform: translateY(-2px);
 }
 
+.r-btn{
+    position: absolute;
+    right: 100px;
+    bottom: 350px;
+    opacity: 100%;
+    width: 170px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 100px;
+    color:#79ca6b;
+
+}
+
 .u-btn, .d-btn {
     text-decoration: none;
     position: relative;
@@ -125,7 +174,7 @@ input::-webkit-inner-spin-button {
     right: 40px; 
 }
 
-.u-btn:hover,  .d-btn:hover{
+.u-btn:hover,  .d-btn:hover, .r-btn:hover{
     color: #ffffcc;
     transform: scale(1.1);
 }

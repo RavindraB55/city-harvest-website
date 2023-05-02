@@ -12,9 +12,9 @@ def home():
 def admin():
 	return redirect(url_for("home"))
 
-@app.route("/<name>")
-def user(name):
-    return f"Hello {name}!"
+#@app.route("/<name>")
+#def user(name):
+#    return f"Hello {name}!"
 
 if __name__ == "__main__":
     name = "Ravi"
